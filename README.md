@@ -4,7 +4,7 @@ HW 4
 
 ## Description
 
-Building a personal portfolio web application from scratch.
+Building an assessment page on Javascript fundamentals.
 
 ## Link
 
