@@ -8,7 +8,7 @@ Building a personal portfolio web application from scratch.
 
 ## Link
 
-<https://kenjib32.github.io/Portfolio-Week-2-Challenge/>
+<https://kenjib32.github.io/Quiz-Week-4-Challenge/>
 
 ## Screenshot
 
@@ -29,4 +29,4 @@ Building a personal portfolio web application from scratch.
 
 ## Repository
 
-<https://github.com/Kenjib32/Portfolio-Week-2-Challenge>
+<https://github.com/Kenjib32/Quiz-Week-4-Challenge>
