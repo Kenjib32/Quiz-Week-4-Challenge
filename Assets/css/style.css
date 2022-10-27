@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --black: black;
+    --blue: rgb(31, 205, 165);
+    --orange: rgb(211, 115, 56);
+    --green: rgb(83, 227, 64);
+    --white: whitesmoke;
+    --deepskyblue: deepskyblue;
+  }
+
+  body {
+    background: var(--white);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Header */
+  header {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      width: 85%;
+  }
+
+  #leaderboardLink:hover {
+      cursor: pointer;
+      color: var(--orange)
+  }
+
+  header h2 {
+      padding-left: 20px;
+      font-size: 2.0rem;
+      display: inline;
+      color: var(--orange);
+  }
+  
+ .timer {
+      font-size: 2.0rem;
+      color: var(--black);
+      display: inline;
+      text-align: right;
+      padding-right: 20px;
+      color: var (--black)
+  }
+
+  /*Main content */
+.container {
+      padding: 20px;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+  }
+
+  
+ h1 {
+    color: var(--black);
+    font-size: 3.0rem;
+    font-weight: bold;
+  }
+
+  p {
+    color: var(--black);
+    font-size: 2.0rem;
+  }
+
+  .screen {
+    align-items: center;
+    text-align: center;
+    }
+  
+ .screen h1, .screen p {
+     text-align: center;
+ }
+
+  .quizzes {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: auto;
+  }
+
+  .conclusion h1, .conclusion p {
+      text-align: left
+  }
+
+  .conclusion input {
+    outline: thick; 
+    border-width: 1px;
+    padding: 5px;
+    width: 35%;
+    font-size: 2.2rem;
+    border-radius: 5px;
+  }
+
+  .conclusion input:focus {
+    border: 2px solid var(--blue);
+  }
+
+  .welcomeScreen {
+      display: flex;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  #quiz-question {
+    color: var(--black);
+    text-align: left;
+    font-size: 3.0rem;
+    font-weight: bold;
+  }
+
+  #leaderboard {
+      text-align: left;
+  }
+
+  /*Button Styling */
+  .button {
+      background: var(--blue);
+      color: var(--white);
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 3px grey;
+      margin-top: 10px;
+  }
+
+  .button:hover {
+      background: var(--orange);
+      border-radius: 10px;
+      box-shadow: 0 2px grey;
+      cursor: pointer;
+  }
+
+  .button:active {
+      border: none;
+      outline: none;
+      box-shadow: 0 0 grey;
+  }
+
+  .button:focus {
+      outline: none;
+  }
+
+  .display-grid {
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      grid-gap: 5px;
+      margin: 20px 0;
+  }
+
+ .submit {
+     width: 25%;
+     margin-top: 10px;
+ }
+
+ .answer-button {
+     width: 50%;
+     text-align: left;
+     font-size: 3.0vw;
+ }
+
+ .final-score {
+     font-size: 25px;
+     text-align: center;
+     color: rgba(199, 187, 187, 0.8);
+     font-style: italic;
+     margin: 0 100px;
+ }
+
+.final-score h3 {
+    border-top: 2px solid rgba(210, 77, 77, 0.8);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+h3 {
+    padding-left: 30%;
+    color: var(--deepskyblue);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 36px;
+}
+
+#wrong h3 {
+    color: red;
+}
+
+/* Leaderboard List */
+ 
+ ol {
+    list-style-type: number;
+ }
+
+ li:nth-child(odd) {
+     background-color: rgba(228, 151, 164, 0.5);;
+ }
+
+
+li {
+    font-size: 4.0vw;
+}
+
+/* media query for smaller screens */
+
+@media screen and (max-width: 1024px) {
+
+    .button {
+        width: 100%;
+        font-size: 3.0vw;
+    }
+
+    #quiz-question {
+        font-size: 4.5vw;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    p {
+        font-size: 3.0vw;
+    }
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+    </head>
+
+    <body> 
+        <!--High Score Navigation Link and Timer Section-->
+        <header>
+            <h2 id="leaderboardLink">Leaderboard
+            </h2> 
+            <h2 class="timer">Time: <span id="timer"></span>
+            </h2>
+
+        </header>
+
+        <!--Welcome Screen-->
+        <div id="welcomeScreen" class="display">
+            <div class="container screen">
+                <h1>Coding Quiz Challenge</h1>  
+                <p>Timed Quiz! If you get a question correct it will increase your time, 
+                    otherwise it will be deducted until the end of the game.
+                </p>
+                <button class="button submit" id="start-quiz">Start Quiz</button>
+            </div>    
+        </div>
+
+        <!--Quiz Screen-->
+        <div id="question-container" class="hidden">
+            <div class="quizzes container">
+                <div id="quiz-question">
+                </div>
+                <div id="answer-button" class="display-grid">
+                </div>
+            </div>
+        </div>
+
+        <!--Quiz Conclusion Screen-->
+        <div id="conclusion-container" class="hidden">
+           <div class="container conclusion">
+            <div id=final-score>
+                <h1>Quiz Concluded</h1>
+            </div>  
+            <form id="initials-input" class="initials">
+              <p> Enter your Initials:
+                <input type="text" name="initials" id="initials" class="text-input" />
+                <button class="button submit" id="sumbit-score" type="submit">Submit</button> </p>
+              </form>
+            </div>
+        </div>
+
+        <!--High Score Screen-->
+        <div id="leaderboard-container" class="hidden">
+          <div class="leaderboard container">
+            <h1 class="leaderboard">Leaderboards</h1>
+            <ol id="leaderboard-list" class="leaderboard-list"></ol>
+        <div>
+            <button class="button" id="restart">Restart</button>
+            <button class="button" id="clear-leaderboard">Clear High Scores</button>
+        </div>
+        </div>
+    </div>
+
+    <!--Answer Feedback Section-->
+    <div class="hidden" id="correct">
+        <h3>Correct Answer</h3>
+    </div>
+    <div class="hidden" id="wrong">
+        <h3>Incorrect Answer </h3>
+    </div>
+
+    <script src="./assets/js/script.js"></script> 
+</body>
+</html>
