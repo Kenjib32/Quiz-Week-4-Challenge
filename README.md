@@ -12,7 +12,7 @@ Building an assessment page on Javascript fundamentals.
 
 ## Screenshot
 
-![Portfolio Gif Screenshot](assets/images/Coding%20Quiz%20Gif.gif)
+![Coding Quiz Gif](assets/images/Coding%20Quiz%20Gif.gif)
 ## Complied Criteria
 
 * Timed quiz about Javascript fundamentals that stores high scores was developed.
